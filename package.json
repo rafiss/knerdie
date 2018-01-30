@@ -12,7 +12,6 @@
     "build": "npm-run-all --parallel build:*",
     "build:src": "rollup -c rollup.config.prod.js",
     "build:lib": "rollup -c rollup.config.lib.js",
-    "serve": "http-server -p 8080 -r .",
     "watch": "npm-run-all --parallel watch:*",
     "watch:src": "rollup --watch -c rollup.config.dev.js"
   },
@@ -45,7 +44,6 @@
   },
   "dependencies": {
     "@types/pubsub-js": "^1.5.17",
-    "http-server": "^0.9.0",
     "konva": "^1.6.0",
     "loglevel": "^1.4.1",
     "pubsub-js": "^1.5.6",
